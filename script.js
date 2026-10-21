@@ -1068,9 +1068,9 @@ function updatePoem() {
     : (completedStitches.size / totalStitches) * 100;
 
   const revealedLines =
-    progress >= 90 ? 3 :
-    progress >= 60 ? 2 :
-    progress >= 30 ? 1 : 0;
+    progress >= 80 ? 3 :
+    progress >= 50 ? 2 :
+    progress >= 20 ? 1 : 0;
 
   introduction.hidden = revealedLines > 0;
   haikuElement.hidden = revealedLines === 0;

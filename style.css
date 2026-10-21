@@ -321,7 +321,7 @@ text-shadow: 0 0 2px #e8e1e1;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 
@@ -366,7 +366,8 @@ text-shadow: 0 0 2px #e8e1e1;
 
 @media (max-width: 480px) {
   .website {
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
   .header h1 {
