@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon"/>
+  <title>the woods in stitches</title>
+
+  <style>
+    @font-face {
+      font-family: 'Pixel-Maz';
+      font-weight: normal;
+      font-style: normal;
+      src: url('Pixel-Maz.ttf') format('truetype');
+    }
+
+    @font-face {
+    font-family: 'PjukHand';
+    font-style: normal;
+    font-weight: normal;
+    src: url('pjukhand.ttf') format('truetype');
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="website">
+
+    <header class="header">
+      <h1>the <font color="#a3ada0">woods</font> in <font color="#bfacac">stitches</font></h1>
+    </header>
+
+    <section class="embroidery">
+
+      <div class="wooden-frame">
+        <div class="aida-fabric">
+          <div id="stitch-grid" aria-label="interactive embroidery pattern"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="paper-note">
+
+      <div class="note-heading">
+        field note no. <span id="pattern-number">001</span>
+      </div>
+
+      <div id="poem-introduction">
+        <p>stitch by stitch, a little poem unfolds ..</p>
+        <p class="instruction">click & drag to embroider the pattern above and reveal it</p>
+      </div>
+
+      <div id="haiku" class="haiku" hidden>
+        <p id="line-1">. . . . . . . . . .</p>
+        <p id="line-2">. . . . . . . . . .</p>
+        <p id="line-3">. . . . . . . . . .</p>
+      </div>
+
+    </section>
+
+    <nav class="pagination" aria-label="pattern navigation">
+      <a id="older-link" href="#" class="page-link">older</a>
+      <span id="page-count">01 / 01</span>
+      <a id="newer-link" href="#" class="page-link">newer</a>
+    </nav>
+    <br><br>
+    <div class="fragment">there's a cottage hidden among the trees ..<br>
+    follow the <a id="link" href="http://blog.puf.li" target="_blank">stone pathway</a> ?<br>
+    </div>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
