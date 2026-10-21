@@ -68,7 +68,7 @@ const patterns = [
     P: "#ceb063"
   },
   haiku: [
-    "two berries have ripened",
+    "two berries are ripe",
     "among the leaves and flowers",
     "a gift from the sun"
   ]
@@ -142,9 +142,9 @@ const patterns = [
     P: "#59652f"
   },
   haiku: [
-    "a traveler takes his time",
-    "the branch bends a little",
-    "the flower can wait"
+    "a snail wanders by",
+    "the flower leans down to see",
+    "there is time enough"
   ]
 },
 
@@ -534,7 +534,7 @@ const patterns = [
   haiku: [
     "held between two paws",
     "a treasure from the old oak",
-    "saved for a colder day"
+    "saved for colder days"
   ]
 },
 
@@ -608,9 +608,9 @@ const patterns = [
     L: "#59482d"
   },
   haiku: [
-    "a comfortable place",
-    "beneath the clover leaves",
-    "the afternoon lingers"
+    "a cozy little spot",
+    "beneath the green clover leaves",
+    "the afternoon stays"
   ]
 },
 
@@ -691,8 +691,8 @@ const patterns = [
     M: "#c69e79"
   },
   haiku: [
-    "a rustle in the leaves",
-    "and there among the primroses",
+    "a rustle of leaves",
+    "there among the primroses",
     "someone looks at me"
   ]
 },
