@@ -2173,8 +2173,8 @@ function updatePagination() {
     pattern.number;
 
   document.getElementById("page-count").textContent =
-    `${String(page).padStart(2, "0")} / ${String(patterns.length).padStart(2, "0")}`;
-
+    `${String(patterns.length - page + 1).padStart(2, "0")} / ${String(patterns.length).padStart(2, "0")}`;
+    
   const newer = document.getElementById("newer-link");
   const older = document.getElementById("older-link");
 
