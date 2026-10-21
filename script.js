@@ -1780,11 +1780,15 @@ const patterns = [
 
 
 const params = new URLSearchParams(window.location.search);
-const requestedPage = Number(params.get("page") || 1);
+const requestedPattern = params.get("pattern");
 
-const page = Number.isInteger(requestedPage)
-  ? Math.min(Math.max(requestedPage, 1), patterns.length)
-  : 1;
+const patternIndex = requestedPattern
+  ? patterns.findIndex(item =>
+      Number(item.number) === Number(requestedPattern)
+    )
+  : 0;
+
+const page = patternIndex === -1 ? 1 : patternIndex + 1;
 
 
 
@@ -2174,7 +2178,7 @@ function updatePagination() {
 
   document.getElementById("page-count").textContent =
     `${String(patterns.length - page + 1).padStart(2, "0")} / ${String(patterns.length).padStart(2, "0")}`;
-    
+
   const newer = document.getElementById("newer-link");
   const older = document.getElementById("older-link");
 
@@ -2184,9 +2188,7 @@ function updatePagination() {
   } else {
     newer.classList.remove("disabled");
 
-    newer.href = page === 2
-      ? "index.html"
-      : `?page=${page - 1}`;
+    newer.href = `?pattern=${Number(patterns[page - 2].number)}`;
   }
 
   if (page === patterns.length) {
@@ -2194,7 +2196,8 @@ function updatePagination() {
     older.removeAttribute("href");
   } else {
     older.classList.remove("disabled");
-    older.href = `?page=${page + 1}`;
+
+    older.href = `?pattern=${Number(patterns[page].number)}`;
   }
 }
 
