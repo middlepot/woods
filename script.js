@@ -434,7 +434,7 @@ const patterns = [
   haiku: [
     "among lavender",
     "a bumblebee gathers gold",
-    "the blossoms bend low",
+    "the flowers bend low",
   ],
 },
 
