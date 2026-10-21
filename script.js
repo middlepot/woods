@@ -158,7 +158,7 @@ const patterns = [
 
   
 {
-  number: "010",
+  number: "012",
   grid: stitchGrid80([
     "4:57:N",
     "5:56:NJL",
